@@ -2,7 +2,6 @@ function quantidadeDeCaracteres(text) {
     document.getElementById("quantidade").innerHTML = text.length;
 };
 
-
 console.log("text".length);
 
 console.log("Apple, Banana, Kiwi".slice(0, 5)); //Result: Apple (0, 1, 2, 3, 4). Position end is 5 - 1 = 4;

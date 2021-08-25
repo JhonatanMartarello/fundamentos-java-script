@@ -53,8 +53,17 @@ const someday = new Date();
 someday.setFullYear(2100, 0, 14);
 
 if (someday > today) {
-  text = "Today is before January 14, 2100.";
+    text = "Today is before January 14, 2100.";
 } else {
-  text = "Today is after January 14, 2100.";
+    text = "Today is after January 14, 2100.";
 }
 console.log(text);
+
+//-------------------------------------------------
+
+const myDate = new Date();
+console.log(isDate(myDate));
+
+function isDate(myDate) {
+    return myDate.constructor === Date;
+}
